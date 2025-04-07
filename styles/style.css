@@ -206,7 +206,7 @@ h2 {
 }
 
 .footer__contacts {
-    width: 264.57px;
+    max-width: 264.57px;
 }
 
 .footer__nav-list {
@@ -220,7 +220,7 @@ h2 {
     gap: 48px;
     align-items: start;
 
-    width: 240px;
+    max-width: 240px;
     justify-self: end;
 
     list-style-type: none;
