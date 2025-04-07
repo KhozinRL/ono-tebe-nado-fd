@@ -1,0 +1,64 @@
+
+.logo {
+    width: 148px;
+    height: 105px;
+}
+
+.nowrap {
+    text-wrap: nowrap;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.letter-spacing-none {
+    letter-spacing: 0;
+}
+
+.text_white {
+    color: white;
+}
+
+.theme_dark-on-light {
+    color: black;
+    background-color: white;
+}
+
+.theme_light-on-dark {
+    color: white;
+    background-color: rgb(39, 27, 114);
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.social-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+
+    font-style:normal;
+    line-height: 1.4;
+}
+
+.link_active {
+    text-decoration: none;
+}
+
+.logo-circle {
+    display: flex;
+    background-color: black;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+}
+
+.logo-circle__image {
+    margin: auto;
+}
