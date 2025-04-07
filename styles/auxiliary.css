@@ -16,10 +16,6 @@
     letter-spacing: 0;
 }
 
-.text_white {
-    color: white;
-}
-
 .theme_dark-on-light {
     color: black;
     background-color: white;
