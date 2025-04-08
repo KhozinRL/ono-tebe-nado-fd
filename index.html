@@ -13,7 +13,7 @@
   <body>
     <!-- Шапка -->
     <header class="header">
-      <nav class="header__nav nowrap">
+      <nav class="header__nav">
         <ul class="header__links-list">
           <li class="header__links-list-item header__links-list-item_no-bullit">
             <a href="#cover" class="link_active">главная</a>
@@ -36,8 +36,8 @@
       </a>
 
       <address class="header__contacts contacts">
-        <a href="tel:+99995555555" class="nowrap">+9 999 555 5555</a>
-        <a href="mailto:info@sobaka.ge" class="nowrap">info@sobaka.ge</a>
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <span>наб. Принсенграхт 263- 265, Амстердам</span>
       </address>
     </header>
@@ -45,7 +45,7 @@
     <!-- Основной контент -->
     <main>
       <!-- Обложка -->
-      <section class="cover theme_light-on-dark" id="cover">
+      <section class="cover" id="cover">
         <div class="overlay">
           <div class="cover__wrapper">
             <h1 class="cover__title">
@@ -58,7 +58,9 @@
               <p class="cover__subline">
                 Аукцион вещей, в которые никто не верил
               </p>
-              <button class="cover__button">Сделать ставку</button>
+              <button type="button" class="cover__button">
+                Сделать ставку
+              </button>
             </div>
           </div>
         </div>
@@ -68,67 +70,59 @@
       <section class="lots" id="lot">
         <h2 class="lots__title">ЛОТЫ</h2>
 
-        <div class="lots__content">
-          <a href="#0">
-            <article class="lot-card theme_light-on-dark">
-              <h3 class="lot-card__title">
-                Фильм режиссёра, который бросил киношколу
-              </h3>
-              <p class="lot-card__content">
-                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-              </p>
-              <img
-                src="images/card-lot-01.jpg"
-                alt="картинка лота 1"
-                class="lot-card__image"
-              />
-              <div class="lot-card__overlay overlay"></div>
-            </article>
-          </a>
+        <ul class="lots__list">
+          <li class="lots__list-item">
+            <a href="#0" class="lots__list-link">
+              <article class="lot-card lot-card_film">
+                <h3 class="lot-card__title">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
+                <p class="lot-card__content">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас
+                  Андерсон?
+                </p>
+                <div class="lot-card__overlay overlay"></div>
+              </article>
+            </a>
+          </li>
 
-          <a href="#0">
-            <article class="lot-card theme_light-on-dark">
-              <h3 class="lot-card__title">
-                Книга, где описан один скучный день из жизни рекламного агента
-              </h3>
-              <p class="lot-card__content">
-                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-                переходами на древнеанглийский. В ней одновременно
-                рассказывается о 16 июня 1904 года и об истории литературы,
-                начиная с античных времён. И это всё накладывается на эпическую
-                поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
-                Джойса?
-              </p>
-              <img
-                src="images/card-lot-02.jpg"
-                alt="картинка лота 2"
-                class="lot-card__image"
-              />
-              <div class="lot-card__overlay overlay"></div>
-            </article>
-          </a>
+          <li class="lots__list-item">
+            <a href="#0" class="lots__list-link">
+              <article class="lot-card lot-card_book">
+                <h3 class="lot-card__title">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h3>
+                <p class="lot-card__content">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                  с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?
+                </p>
+                <div class="lot-card__overlay overlay"></div>
+              </article>
+            </a>
+          </li>
 
-          <a href="#0">
-            <article class="lot-card theme_light-on-dark">
-              <h3 class="lot-card__title">
-                Картина, которую повторит даже 5-летний сын маминой подруги
-              </h3>
-              <p class="lot-card__content">
-                Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                котиков... Сколько бы вы на такое поставили, если бы не знали,
-                что это — одна из революционных работ Кандинского?
-              </p>
-              <img
-                src="images/card-lot-03.jpg"
-                alt="картинка лота 3"
-                class="lot-card__image"
-              />
-              <div class="lot-card__overlay overlay"></div>
-            </article>
-          </a>
-        </div>
+          <li class="lots__list-item">
+            <a href="#0" class="lots__list-link">
+              <article class="lot-card lot-card_picture">
+                <h3 class="lot-card__title">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h3>
+                <p class="lot-card__content">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков... Сколько бы вы на такое поставили, если бы не знали,
+                  что это — одна из революционных работ Кандинского?
+                </p>
+                <div class="lot-card__overlay overlay"></div>
+              </article>
+            </a>
+          </li>
+        </ul>
 
         <a href="#0" class="lots__look-more">посмотреть больше</a>
       </section>
@@ -169,12 +163,12 @@
     <!-- Подвал -->
     <footer class="footer">
       <address class="footer__contacts contacts">
-        <a href="tel:+99995555555" class="nowrap">+9 999 555 5555</a>
-        <a href="mailto:info@sobaka.ge" class="nowrap">info@sobaka.ge</a>
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <span>наб. Принсенграхт 263-265, Амстердам</span>
       </address>
 
-      <nav class="footer__nav nowrap">
+      <nav class="footer__nav">
         <ul class="footer__nav-list">
           <li class="footer__nav-list-item">
             <a href="#cover" class="link_active">главная</a>
@@ -190,18 +184,22 @@
 
       <ul class="footer__socials-list">
         <li class="footer__socials-list-item">
-          <a href="#0" class="footer__socials-link">
+          <a href="#0" target="_blank" class="footer__socials-link">
             <img src="images/yt.svg" alt="youtube" class="social-icon" />
           </a>
         </li>
         <li class="footer__socials-list-item">
-          <a href="#0" class="footer__socials-link">
+          <a href="#0" target="_blank" class="footer__socials-link">
             <img src="images/vk.svg" alt="vk" class="social-icon" />
           </a>
         </li>
         <li class="footer__socials-list-item">
-          <a href="#0" class="footer__socials-link">
-            <img src="images/pinterest.svg" alt="pinterest" class="social-icon" />
+          <a href="#0" target="_blank" class="footer__socials-link">
+            <img
+              src="images/pinterest.svg"
+              alt="pinterest"
+              class="social-icon"
+            />
           </a>
         </li>
       </ul>

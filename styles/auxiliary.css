@@ -4,26 +4,12 @@
     height: 105px;
 }
 
-.nowrap {
-    text-wrap: nowrap;
-}
-
 .uppercase {
     text-transform: uppercase;
 }
 
 .letter-spacing-none {
     letter-spacing: 0;
-}
-
-.theme_dark-on-light {
-    color: black;
-    background-color: white;
-}
-
-.theme_light-on-dark {
-    color: white;
-    background-color: rgb(39, 27, 114);
 }
 
 .overlay {
